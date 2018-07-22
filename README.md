@@ -14,8 +14,8 @@
 
 ## Index
 
-* Onboarding
 * Project
+	* Onboarding
 	* Notes & Weekly Updates
 	* Schedule
 	* Presentation

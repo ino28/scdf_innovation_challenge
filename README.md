@@ -19,6 +19,7 @@
 	* Notes & Weekly Updates
 	* Schedule
 	* Presentation
+	* source code
 * AEDLocator
-* srcode
+* src
 * Tools and Resources

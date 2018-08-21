@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_google_map_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_inbox_empty"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_my"
+            android:icon="@drawable/ic_person_profile"
+            android:title="My Contribution" />
+        <item
+            android:id="@+id/nav_daily"
+            android:icon="@drawable/ic_gift_present_bonus"
+            android:title="Daily bonus" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Report AED" />
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share with friend" />
+        </menu>
+    </item>
+
+</menu>

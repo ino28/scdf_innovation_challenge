@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "120669500466",
+    "firebase_url": "https://aedlocator2018jungmf.firebaseio.com",
+    "project_id": "aedlocator2018jungmf",
+    "storage_bucket": "aedlocator2018jungmf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120669500466:android:03301c42e29b6c50",
+        "android_client_info": {
+          "package_name": "sg.edu.ntu.eee.aedlocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120669500466-sd57st5h3currbmkc57foq9m1arolr02.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "120669500466-sd57st5h3currbmkc57foq9m1arolr02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpqoFi_aOR8Tbu1sH9Ffuj4_IRp5Pu86U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

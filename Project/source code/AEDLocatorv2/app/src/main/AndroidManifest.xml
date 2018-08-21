@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.ntu.eee.aedlocator">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".AEDDetailActivity"
+            android:label="@string/title_activity_detail_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AEDUpdateActivity"
+            android:label="@string/title_activity_aed_update" />
+        <activity
+            android:name=".AEDReportActivity"
+            android:label="@string/title_activity_aed_report" />
+        <activity
+            android:name=".AEDSuggestActivity"
+            android:label="@string/title_activity_aed_suggest" />
+        <activity
+            android:name=".AEDVerifyActivity"
+            android:label="@string/title_activity_aed_verify" />
+        <activity
+            android:name=".MyContributionActivity"
+            android:label="@string/title_activity_contribution" />
+        <activity
+            android:name=".UserSignUpActivity"
+            android:label="@string/title_activity_signup" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".UserProfileEditActivity"
+            android:label="@string/title_activity_info" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".UserPointActivity"
+            android:label="@string/title_activity_point" />
+        <activity
+            android:name=".UserLevelActivity"
+            android:label="@string/title_activity_level" />
+        <activity
+            android:name=".UserBadgeActivity"
+            android:label="@string/title_activity_badge" />
+        <activity android:name=".InboxActivity"
+            android:label="@string/title_activity_inbox" />
+        <activity android:name=".RewardActivity"
+            android:label="@string/title_activity_reward" />
+    </application>
+
+</manifest>

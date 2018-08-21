@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aed_preview_titl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AED Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="27sp" />
+
+            <!--<ImageButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@null"-->
+                <!--android:src="@drawable/ic_dots_option"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"/>-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/aed_preview_addr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:text="AED Address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/aed_preview_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="AED Description(@NAME)"
+            android:layout_marginBottom="16dp"/>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="DETAILS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="VERIFY"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/button1" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/button2" />
+
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="REPORT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/button3" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

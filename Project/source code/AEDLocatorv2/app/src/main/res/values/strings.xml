@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">AEDLocator</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_detail_view">AED Detail Page</string>
+    <string name="title_activity_aed_report">Report</string>
+    <string name="title_activity_aed_update">Update AED Details</string>
+    <string name="title_activity_aed_suggest">Suggest New AED</string>
+    <string name="title_activity_aed_verify">Verify AED Details</string>
+
+    <string name="title_activity_login">User Log in</string>
+    <string name="title_activity_signup">New User Sign up</string>
+    <string name="title_activity_info">User Info</string>
+    <string name="title_activity_profile">My Page</string>
+    <string name="title_activity_contribution">Contribution</string>
+
+    <string name="title_activity_point">My Heart Collection</string>
+    <string name="title_activity_badge">My Badge Collection</string>
+    <string name="title_activity_level">My Level</string>
+
+    <string name="title_activity_reward">Heart earned!</string>
+
+    <string name="title_activity_inbox">Inbox</string>
+
+    <!-- Strings for Main page -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="home_menu1">About</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="sms_subject">AEDLocator</string>
+    <string name="sms_text">"I am using #AEDLocator to help build the National AED Database! Join me and be a #HonoraryCitizen:)"</string>
+
+    <string name="search_title">Search title?</string>
+
+    <string name="no_user_name">Click here to log in</string>
+    <string name="no_user_email"></string>
+    <string name="main_username_logout">[Log out]</string>
+
+    <!-- Strings for login page-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_log_in">Log in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Strings for AED pages -->
+    <string name="aed_photo">AED photo</string>
+    <string name="further_comment">Additional comment</string>
+    <string name="vrf_text">Please tick the box if you are sure of the information:</string>
+    <string name="hint_fur_comm">(if any)</string>
+
+    <!-- Detail page placeholder -->
+    <string name="detail_loca">Location description missing</string>
+    <string name="detail_status">Verified on 13 July, 2017</string>
+    <string name="detail_status_pending">Waiting verification</string>
+    <string name="detail_addr">Address information missing</string>
+    <string name="detail_hour">Operating hours missing</string>
+    <string name="detail_contbr">SCDF staff</string>
+    <string name="detail_been">No one seems to notice it...?</string>
+
+    <!-- Button text for AED related operations -->
+    <string name="btn_cap_submit">SUBMIT</string>
+    <!--TODO: before submitting AEDupdate let the user double check - review -->
+    <string name="btn_cap_save">SAVE</string>
+
+    <!-- Hint text for AED related operations -->
+    <string name="hint_addr">Address</string>
+    <string name="hint_loca">Location</string>
+    <string name="hint_hour">Operating hours</string>
+</resources>

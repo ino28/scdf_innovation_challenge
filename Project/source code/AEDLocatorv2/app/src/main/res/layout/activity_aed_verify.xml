@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="sg.edu.ntu.eee.aedlocator.AEDVerifyActivity">
+
+    <TextView
+        android:id="@+id/vrf_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#000000"
+        android:text="@string/vrf_text"/>
+
+    <ImageButton
+        android:id="@+id/vrf_capt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/aed_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vrf_text"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/aed_sample_capt"
+        android:clickable="false"/>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_capt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="@id/vrf_capt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/vrf_capt" />
+
+    <TextView
+        android:id="@+id/vrf_addr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_capt"
+        app:layout_constraintRight_toRightOf="@id/vrf_capt"
+        app:layout_constraintTop_toBottomOf="@id/vrf_capt"
+        android:textSize="16sp"
+        android:paddingTop="3dp"
+        android:text="@string/detail_addr"/>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_addr"
+        app:layout_constraintLeft_toRightOf="@id/vrf_addr" />
+
+    <TextView
+        android:id="@+id/vrf_loca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_addr"
+        app:layout_constraintRight_toRightOf="@id/vrf_addr"
+        app:layout_constraintTop_toBottomOf="@id/vrf_addr"
+        android:textSize="16sp"
+        android:paddingTop="3dp"
+        android:text="@string/detail_loca"/>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_loca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_loca"
+        app:layout_constraintLeft_toRightOf="@id/vrf_loca"/>
+
+    <TextView
+        android:id="@+id/vrf_hour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_loca"
+        app:layout_constraintRight_toRightOf="@id/vrf_loca"
+        app:layout_constraintTop_toBottomOf="@id/vrf_loca"
+        android:textSize="16sp"
+        android:paddingTop="3dp"
+        android:text="@string/detail_hour"/>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_hour"
+        app:layout_constraintLeft_toRightOf="@id/vrf_hour"/>
+
+    <TextView
+        android:id="@+id/vrf_cmmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_hour"
+        app:layout_constraintTop_toBottomOf="@id/vrf_hour"
+        android:paddingTop="20dp"
+        android:text="@string/further_comment"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:labelFor="@id/vrf_etxt_cmmt"/>
+
+    <EditText
+        android:id="@+id/vrf_etxt_cmmt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:gravity="top"
+        android:hint="@string/hint_fur_comm"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_cmmt"
+        app:layout_constraintRight_toRightOf="@id/vrf_cbx_hour"
+        app:layout_constraintTop_toBottomOf="@id/vrf_cmmt"/>
+
+    <Button
+        android:id="@+id/btn_submit_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/vrf_etxt_cmmt"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btn_cap_submit"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+
+<!-- Input (edittext) instead of Label (textview)
+
+   <ImageButton
+        android:id="@+id/vrf_capt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/aed_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/aed_sample_capt"
+        android:clickable="false"/>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_capt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vrf_capt" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/vrf_titl_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_capt"
+        app:layout_constraintRight_toRightOf="@id/vrf_capt"
+        app:layout_constraintTop_toBottomOf="@id/vrf_capt"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/vrf_etxt_titl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/aed_name"
+            android:inputType="textPersonName"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_titl_parent"
+        app:layout_constraintStart_toEndOf="@id/vrf_titl_parent"
+        android:paddingTop="50dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/vrf_addr_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_capt"
+        app:layout_constraintRight_toRightOf="@id/vrf_capt"
+        app:layout_constraintTop_toBottomOf="@id/vrf_titl_parent"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/vrf_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location"
+            android:inputType="textPostalAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_addr_parent"
+        app:layout_constraintStart_toEndOf="@id/vrf_addr_parent"
+        android:paddingTop="50dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/vrf_desc_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_capt"
+        app:layout_constraintRight_toRightOf="@id/vrf_capt"
+        app:layout_constraintTop_toBottomOf="@id/vrf_addr_parent"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/vrf_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            android:inputType="textLongMessage" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/vrf_cbx_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vrf_desc_parent"
+        app:layout_constraintStart_toEndOf="@id/vrf_desc_parent"
+        android:paddingTop="50dp"/>
+
+    <TextView
+        android:id="@+id/vrf_cmmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_desc_parent"
+        app:layout_constraintTop_toBottomOf="@id/vrf_desc_parent"
+        android:textSize="15sp"
+        android:text="@string/further_comment"
+        android:layout_marginTop="5dp"
+        android:labelFor="@id/etxtcmmt"/>
+
+    <EditText
+        android:id="@+id/etxtcmmt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:gravity="top"
+        android:hint="You may leave this empty"
+        app:layout_constraintLeft_toLeftOf="@id/vrf_cmmt"
+        app:layout_constraintRight_toRightOf="@id/vrf_cbx_desc"
+        app:layout_constraintTop_toBottomOf="@id/vrf_cmmt"/>
+
+-->

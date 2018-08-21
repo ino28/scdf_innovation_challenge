@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        tools:context="sg.edu.ntu.eee.aedlocator.AEDReportActivity">
+
+        <LinearLayout
+            android:id="@+id/rpt_txti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:id="@+id/rpt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Your Name"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:id="@+id/rpt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Contact number"
+                    android:inputType="phone"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:id="@+id/rpt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rpt_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/rpt_txti"
+            app:layout_constraintTop_toBottomOf="@id/rpt_txti"
+            android:text="Reason"
+            android:textSize="16sp"
+            android:layout_margin="3dp"/>
+
+        <CheckBox
+            android:id="@+id/rpt_cbx_missing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missing AED"
+            app:layout_constraintTop_toBottomOf="@id/rpt_reason"
+            app:layout_constraintLeft_toLeftOf="@id/rpt_txti"
+            android:layout_marginTop="5dp" />
+        <CheckBox
+            android:id="@+id/rpt_cbx_relocated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AED Relocated"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/rpt_reason"
+            app:layout_constraintRight_toRightOf="@id/rpt_txti"
+            android:layout_marginTop="5dp" />
+        <CheckBox
+            android:id="@+id/rpt_cbx_damaged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Damaged AED"
+            app:layout_constraintTop_toBottomOf="@id/rpt_cbx_missing"
+            app:layout_constraintLeft_toLeftOf="@id/rpt_cbx_missing"
+            android:layout_marginTop="5dp" />
+        <CheckBox
+            android:id="@+id/rpt_cbx_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/rpt_cbx_relocated"
+            app:layout_constraintLeft_toLeftOf="@id/rpt_cbx_relocated"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/rpt_cmmt_reason"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:scrollbars="vertical"
+            android:textSize="16sp"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:gravity="top"
+            android:hint=" Please specify:"
+            app:layout_constraintLeft_toLeftOf="@id/rpt_cbx_damaged"
+            app:layout_constraintTop_toBottomOf="@id/rpt_cbx_damaged"
+            app:layout_constraintRight_toRightOf="@id/rpt_txti"/>
+
+        <Button
+            android:id="@+id/btn_submit_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@id/rpt_cmmt_reason"
+            android:background="@color/colorPrimary"
+            android:text="@string/btn_cap_submit"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
